@@ -416,41 +416,52 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     min-height: 100vh;
-    padding: 100px 30px 60px;
+    padding: 100px 24px 0;
     overflow: hidden;
   }
   .hero-text {
-    position: relative;
-    z-index: 20;
+    position: relative !important;
+    z-index: 20 !important;
     margin-left: 0 !important;
     padding: 0 !important;
+    width: 100%;
   }
-  .hero-cta { position: relative; z-index: 20; }
-  .hero-image-left { display: none; }
+  .hero-name { font-size: clamp(3rem, 14vw, 5rem) !important; }
+  .hero-cta { flex-direction: column; }
+  .btn { width: 100%; justify-content: center; clip-path: none; }
+  .hero-image-left { display: none !important; }
   .hero-image-wrap {
     position: relative !important;
     right: auto !important;
     bottom: auto !important;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 0;
     z-index: 10;
+    height: auto !important;
   }
   .hero-image-wrap img {
-    height: 50vh !important;
-    width: auto;
+    height: 45vh !important;
+    width: auto !important;
+    max-width: 80% !important;
+    display: block;
+    vertical-align: bottom;
   }
+  .hero-image-glow { display: none; }
   .scroll-indicator { display: none; }
-  nav { padding: 20px 30px; }
-  nav.scrolled { padding: 14px 30px; }
+  .hero-lights, .light-spot, .orb { display: none; }
+  nav { padding: 20px 24px; }
+  nav.scrolled { padding: 14px 24px; }
   .nav-links { display: none; }
-  section { padding: 80px 30px; }
-  #sobre { grid-template-columns: 1fr; }
+  section { padding: 60px 24px; }
+  #sobre { grid-template-columns: 1fr; gap: 40px; }
   .music-grid { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: 16px; padding: 40px 30px; }
+  footer { flex-direction: column; gap: 12px; padding: 30px 24px; text-align: center; }
   .vert-text { display: none; }
-  .hero-lights, .light-spot { display: none; }
 }
 </style>
 </head>
@@ -548,7 +559,7 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
       Cassiane Borges é uma ministra de louvor que carrega em sua voz o clamor pelas almas e a adoração ao Senhor.
       Buscando sempre fazer aquilo que o Senhor coloca em seu coração, não importando oque é desejavel, mas sim <strong>oque o Senhor Deus exige e pede.</strong>
       <br><br>
-      Tenho em mente que o louvor é uma forma de adoração, busco sempre honrar ao Senhor através da música. Sabendo que em complemento com a palavra, é capaz de quebrantar um coração enrijecido.
+      Tendo em mente que o louvor é uma forma de adoração, ela busca sempre honrar ao Senhor através de sua música. Sabendo que em complemento com a palavra, é capaz de quebrantar um coração enrijecido.
     </p>
     <div style="position:relative; overflow:hidden; border:1px solid rgba(87,68,154,0.2); border-radius:2px; margin-top:32px;">
       <img src="sobre-foto.png" alt="Cassiane Borges" style="width:100%; display:block; object-fit:cover;">
