@@ -491,7 +491,8 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
   #sobre { grid-template-columns: 1fr; gap: 40px; }
   .music-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 12px; padding: 30px 24px; text-align: center; }
-  .vert-text { display: none; }
+  .apx-seal { display: none !important; }
+  .apx-seal-mobile { display: block !important; }
 }
 </style>
 </head>
@@ -615,7 +616,7 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
         <div class="music-card-number">01</div>
         <div class="card-line"></div>
         <h3>Cultos ao Vivo</h3>
-        <p>Clamor & Presença de Deus</p>
+        <p>Performance · Deus · Presença</p>
       </div>
     </div>
     <div class="music-card reveal reveal-delay-2">
@@ -672,9 +673,10 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
 <footer>
   <a href="#" class="footer-logo">Cassiane Borges</a>
   <p class="footer-copy">© 2024 · Todos os direitos reservados</p>
+  <p class="apx-seal-mobile" style="display:none;font-family:'Syne',sans-serif;font-size:0.55rem;letter-spacing:3px;text-transform:uppercase;color:rgba(217,215,239,0.25);">Desenvolvido por APX SITES®</p>
 </footer>
 
-<div style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:9999;font-family:'Syne',sans-serif;font-size:0.55rem;letter-spacing:3px;text-transform:uppercase;color:rgba(217,215,239,0.25);pointer-events:none;">Desenvolvido por APX SITES®</div>
+<div class="apx-seal" style="position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:9999;font-family:'Syne',sans-serif;font-size:0.55rem;letter-spacing:3px;text-transform:uppercase;color:rgba(217,215,239,0.25);pointer-events:none;white-space:nowrap;">Desenvolvido por APX SITES®</div>
 
 <script>
 const cursor = document.getElementById('cursor');
