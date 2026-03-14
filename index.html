@@ -431,7 +431,21 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
   .hero-name { font-size: clamp(3rem, 14vw, 5rem) !important; }
   .hero-cta { flex-direction: column; }
   .btn { width: 100%; justify-content: center; clip-path: none; }
-  .hero-image-left { display: none !important; }
+  .hero-image-left { 
+    display: flex !important;
+    position: absolute !important;
+    bottom: 0;
+    left: 24px;
+    z-index: 15;
+    height: auto;
+    margin: 0;
+    align-items: flex-end;
+  }
+  .hero-image-left img {
+    height: 28vh !important;
+    width: auto !important;
+    max-width: none !important;
+  }
   .hero-image-wrap {
     position: relative !important;
     right: auto !important;
