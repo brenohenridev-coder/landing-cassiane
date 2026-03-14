@@ -698,10 +698,25 @@ footer {
 }
 
 @media (max-width: 900px) {
-  #hero { grid-template-columns: 1fr; padding: 0 30px; padding-top: 80px; }
+  #hero { 
+    grid-template-columns: 1fr; 
+    padding: 0 30px; 
+    padding-top: 80px;
+    min-height: auto;
+    padding-bottom: 40px;
+  }
   .hero-image-left { display: none; }
-  .hero-image-wrap { height: 60vh; justify-content: center; }
-  .hero-image-wrap img { height: 60vh; }
+  .hero-image-wrap { 
+    position: relative;
+    right: auto; bottom: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .hero-image-wrap img { 
+    height: 50vh;
+    width: auto;
+  }
   nav { padding: 20px 30px; }
   nav.scrolled { padding: 14px 30px; }
   .nav-links { display: none; }
@@ -710,6 +725,8 @@ footer {
   .music-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 16px; }
   .vert-text { display: none; }
+  .hero-text { z-index: 20; position: relative; }
+  .hero-cta { position: relative; z-index: 20; }
 }
 </style>
 </head>
