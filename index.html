@@ -410,7 +410,8 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
 
 .divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--purple), transparent); margin: 0 auto; opacity: 0.3; }
 
-/* ===== MOBILE ===== */
+/* TERCEIRA IMAGEM - MOBILE ONLY */
+.hero-image-right { display: none; }
 @media (max-width: 900px) {
   #hero {
     display: flex;
@@ -435,7 +436,7 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
     display: flex !important;
     position: absolute !important;
     bottom: 0;
-    left: 24px;
+    left: 0;
     z-index: 15;
     height: auto;
     margin: 0;
@@ -445,6 +446,20 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
     height: 28vh !important;
     width: auto !important;
     max-width: none !important;
+  }
+  .hero-image-right {
+    display: flex !important;
+    position: absolute !important;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+    align-items: flex-end;
+  }
+  .hero-image-right img {
+    height: 28vh !important;
+    width: auto !important;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 20px rgba(87,68,154,0.2));
   }
   .hero-image-wrap {
     position: relative !important;
@@ -532,6 +547,11 @@ footer { padding: 40px 60px; display: flex; justify-content: space-between; alig
   <div class="hero-image-wrap">
     <div class="hero-image-glow"></div>
     <img src="cassiane-hero.png" alt="Cassiane Borges">
+  </div>
+
+  <!-- MOBILE ONLY: terceira imagem direita -->
+  <div class="hero-image-right">
+    <img src="essa2.png" alt="Cassiane Borges">
   </div>
 
   <div class="scroll-indicator">
